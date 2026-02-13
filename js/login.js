@@ -1,12 +1,21 @@
-console.log('button clicking file added');
-
 //step -1 : set event handler
 document.getElementById('btnLogin').addEventListener('click', function (e) {
-  //step-2 : prevent default behavior
   e.preventDefault();
-  console.log('login button click');
+  console.log('button click');
 
-  // 3no : get the phone number
-  const phoneNumbers = document.getElementById('phoneNumbers').value;
-  console.log(phoneNumbers);
+  // get phone numbers
+  const phoneNubmers = document.getElementById('phoneNumbers').value;
+  console.log(phoneNubmers);
+
+  // get pin numbers
+  const pinNumbers = document.getElementById('pinNumber').value;
+
+  console.log(pinNumbers);
+  // bad way to vlaidate
+  if (phoneNubmers === '5' && pinNumbers === '1234') {
+    console.log('you are log in');
+    window.location.href = '../home.html';
+  } else {
+    alert('worng phone numbers');
+  }
 });

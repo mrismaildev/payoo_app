@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+  <main
+    class="min-h-screen flex items-center justify-center bg-linear-to-br from-neutral-900 via-neutral-800 to-neutral-900">
+
+    <div class="mockup-phone border-primary">
+      <div class="mockup-phone-camera"></div>
+
+      <div class="mockup-phone-display bg-base-200 text-white flex flex-col px-7 py-14">
+
+        <!-- Availabe balance  -->
+        <div class="">
+          <div class="stats bg-white shadow">
+            <div class="stat ">
+
+              <div class="stat-value text-black">$89,400</div>
+              <div class="stat-desc text-black">Available balance</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="divider w-full"></div>
+
+        <div class="">
+          <div class="btn btn-primary">add Mony</div>
+          <div class="btn btn-success">Cash out</div>
+        </div>
+        <div class="divider"></div>
+        <!-- add mony form -->
+        <form action="">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label  class="label text-black">Amount</label>
+                <input id="getAmount" type="text" class="input text-black" placeholder="Amount" />
+                <label class="label text-black">Pin</label>
+                <input id="pinNum" type="password" class="input text-black" placeholder="Pin Number" />
+                <div><a class="link link-hover">Forgot Pin?</a></div>
+                <button id="addMony" class="btn btn-neutral mt-4">Add Mony</button>
+              </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </form>
+    </div>
+    </div>
+  </main>
+
+  <script src="./js/home.js"></script>
+</body>
+
+</html>
