@@ -25,7 +25,7 @@
           <div class="stats bg-white shadow">
             <div class="stat ">
 
-              <div class="stat-value text-black">$89,400</div>
+              <div id="accoutBlanceMy" class="stat-value text-black">89400</div>
               <div class="stat-desc text-black">Available balance</div>
             </div>
           </div>
@@ -35,25 +35,44 @@
         <div class="divider w-full"></div>
 
         <div class="">
-          <div class="btn btn-primary">add Mony</div>
-          <div class="btn btn-success">Cash out</div>
+          <div id="btnShowAdd" class="btn btn-primary">add Money</div>
+          <div id="btnShowOut" class="btn btn-success">Cash out</div>
         </div>
         <div class="divider"></div>
         <!-- add mony form -->
-        <form action="">
-          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <div class="card-body">
-              <fieldset class="fieldset">
-                <label  class="label text-black">Amount</label>
-                <input id="getAmount" type="text" class="input text-black" placeholder="Amount" />
-                <label class="label text-black">Pin</label>
-                <input id="pinNum" type="password" class="input text-black" placeholder="Pin Number" />
-                <div><a class="link link-hover">Forgot Pin?</a></div>
-                <button id="addMony" class="btn btn-neutral mt-4">Add Mony</button>
-              </fieldset>
+        <div id="addMoneyShow" class="">
+          <form action="">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label text-black">Amount</label>
+                  <input id="inputAmaount" type="text" class="input text-black" placeholder="Amount" />
+                  <label class="label text-black">Pin</label>
+                  <input id="pinNum" type="password" class="input text-black" placeholder="Pin Number" />
+                  <div><a class="link link-hover">Forgot Pin?</a></div>
+                  <button id="btnAddMoney" class="btn btn-neutral mt-4">Add Money</button>
+                </fieldset>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
+
+        <div id="cashOutShow" class="hidden">
+          <form action="">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label text-black">Amount</label>
+                  <input id="inputAmaountAdd" type="text" class="input text-black" placeholder="Amount" />
+                  <label class="label text-black">Pin</label>
+                  <input id="myPinNum" type="password" class="input text-black" placeholder="Pin Number" />
+                  <div><a class="link link-hover">Forgot Pin?</a></div>
+                  <button id="cashOutBtn" class="btn btn-neutral mt-4">Cash Out</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     </form>
@@ -61,7 +80,10 @@
     </div>
   </main>
 
-  <script src="./js/home.js"></script>
+  <script src="./js/addMoney.js"></script>
+  <script src="./js/cashout.js"></script>
+  <script src="./js/fatures.js"></script>
+
 </body>
 
 </html>
