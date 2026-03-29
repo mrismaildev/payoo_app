@@ -12,7 +12,7 @@ document.getElementById('btnLogin').addEventListener('click', function (e) {
 
   console.log(pinNumbers);
   // bad way to vlaidate
-  if (phoneNubmers === '5' && pinNumbers === '1234') {
+  if (phoneNubmers.length === '11' && pinNumbers === '1234') {
     console.log('you are log in');
     window.location.href = './home.html';
   } else {
